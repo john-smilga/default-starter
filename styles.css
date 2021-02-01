@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
-
+* {
+  box-sizing: border-box;
+}
 :root {
+  /* COLORS  */
   /* dark shades of primary color*/
+  font-size: 87.5%;
   --primary-1: hsl(244, 48%, 27%);
   --primary-2: hsl(243, 47%, 37%);
   --primary-3: hsl(243, 47%, 48%);
   --primary-4: hsl(243, 65%, 58%);
   /* primary/main color */
-  --clr-primary-5: hsl(243, 100%, 68%);
+  --primary-5: hsl(243, 100%, 68%);
   /* lighter shades of primary color */
   --primary-6: hsl(243, 100%, 73%);
   --primary-7: hsl(243, 100%, 77%);
@@ -26,15 +30,46 @@
   --grey-8: hsl(210, 31%, 80%);
   --grey-9: hsl(212, 33%, 89%);
   --grey-10: hsl(210, 36%, 96%);
-  /*  */
+  --black: #222;
+  --white: #fff;
+  --red-dark: #721c24;
+  --red-light: #f8d7da;
+  --green-dark: #155724;
+  --green-light: #d4edda;
+  /* lines */
+  --lineColor: var(--grey-5);
+  --line: 1px solid var(--lineColor);
+  /* elevation */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* REST */
   --backgroundColor: var(--grey-10);
   --textColor: var(--grey-1);
+  --baseFontSize: 100%;
   --headingFont: 'Inconsolata', monospace;
   --bodyFont: 'Montserrat', sans-serif;
+  --smallText: 0.8em;
+  --borderRadius: 0.25rem;
+}
+
+@media only screen and (min-width: 576px) {
+  :root {
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    font-size: 112.5%;
+  }
 }
 
 html {
-  font-size: 112.5%;
+  font-size: var(--baseFontSize);
 }
 
 body {
@@ -47,8 +82,14 @@ body {
 
 p {
   margin-bottom: 1rem;
+  max-width: 40em;
 }
-
+p a,
+blockquote a {
+  color: var(--black);
+  border-bottom: 2px solid var(--primary-5);
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -58,6 +99,7 @@ h5 {
   font-family: var(--headingFont);
   font-weight: 400;
   line-height: 1.3;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -84,4 +126,113 @@ h5 {
 small,
 .text_small {
   font-size: 0.8rem;
+}
+
+blockquote {
+  margin: 10px;
+  padding: 2em;
+  background: var(--white);
+  box-shadow: var(--level-3);
+}
+
+form {
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--level-2);
+  padding: 2rem 2.5rem;
+}
+label {
+  display: block;
+  font-size: var(--smallText);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--grey-10);
+  border-color: transparent;
+}
+.form-row {
+  margin-bottom: 1rem;
+}
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+select {
+  border: var(--line);
+  border-radius: 4px;
+}
+::placeholder {
+  color: var(--grey-6);
+}
+
+hr {
+  border-top: var(--line);
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  color: var(--white);
+  background: var(--primary-5);
+  border: none;
+  border-radius: var(--borderRadius);
+  padding: 5px 25px;
+  box-shadow: var(--level-1);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+}
+button:hover {
+  color: var(--primary-5);
+  background: var(--primary-1);
+  box-shadow: var(--level-2);
+}
+button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+button.cancel {
+  background: var(--red-dark);
+  color: var(--white);
+}
+button.block {
+  width: 100%;
+}
+button.small {
+  font-size: var(--smallText);
+}
+.layout {
+  margin: 0 auto;
+  width: 95%;
+}
+.alert {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.alert-danger {
+  color: var(--red-dark);
+  background-color: var(--red-light);
+  border-color: var(--red-light);
+}
+.alert-success {
+  color: var(--green-dark);
+  background-color: var(--green-light);
+  border-color: var(--green-light);
+}
+
+.contact-form {
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-form h4 {
+  margin-top: 0;
 }
