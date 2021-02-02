@@ -69,7 +69,7 @@ body {
   --letterSpacing: 2px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1170px;
-  --fixed-width: 600;
+  --fixed-width: 600px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -220,7 +220,7 @@ button.block {
 }
 .contact-form {
   width: 90vw;
-  max-width: 600px;
+  max-width: var(--fixed-width);
   margin: 3rem auto;
 }
 /* Basic Classes */
