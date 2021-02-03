@@ -276,3 +276,56 @@ button.block {
     align-items: center;
   }
 }
+
+/* loading */
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
+}
+.loading {
+  margin: 0 auto;
+}
+/* form loading */
+
+.form-loading {
+  position: relative;
+}
+.form-loading::before {
+  background: var(--white);
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: var(--radius);
+  opacity: 0.8;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-loading::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 3rem);
+  left: calc(50% - 3rem);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: var(--clr-primary-5);
+  animation: spinner 0.6s linear infinite;
+}
