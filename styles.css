@@ -1,7 +1,7 @@
 /* TEMP */
-body {
+/* body {
   padding: 2rem;
-}
+} */
 /* TEMP */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
@@ -62,13 +62,14 @@ body {
   --headingFont: 'Inconsolata', monospace;
   --bodyFont: 'Montserrat', sans-serif;
   --smallText: 0.8em;
+  --extraSmallText: 0.7em;
   /* rest */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-1000);
   --borderRadius: 0.25rem;
-  --letterSpacing: 2px;
+  --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1170px;
+  --max-width: 1120px;
   --fixed-width: 600px;
 }
 
@@ -92,7 +93,7 @@ body {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   max-width: 40em;
 }
 
@@ -101,12 +102,13 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 3rem 0 1.38rem;
-  margin-bottom: 0.75rem;
+  margin: 0;
+  margin-bottom: 1.38rem;
   font-family: var(--headingFont);
   font-weight: 400;
   line-height: 1.3;
   text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
 }
 
 h1 {
@@ -177,7 +179,12 @@ textarea {
 ::placeholder {
   color: var(--grey-600);
 }
-
+.form-alert {
+  color: var(--red-dark);
+  font-size: var(--extraSmallText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+}
 hr {
   border-top: var(--line);
 }
@@ -261,14 +268,6 @@ button.block {
   width: 7rem;
   background: var(--primary-600);
   margin: 0 auto;
-}
-
-form > *:first-child,
-.title > *:first-child {
-  margin-top: 0;
-}
-form > *:first-child {
-  margin-bottom: 1rem;
 }
 
 form > *:last-child {
