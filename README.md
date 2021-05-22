@@ -30,7 +30,7 @@ Alternative/Fancier way of doing this
 
 #### Select Fonts
 
-- [fontapair](https://www.fontpair.co/)
+- [fontpair](https://www.fontpair.co/)
 - [pagecloud](https://www.pagecloud.com/blog/best-google-fonts-pairings)
 
 #### Grab the CSS
