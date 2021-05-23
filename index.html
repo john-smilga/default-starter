@@ -2,74 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
     <!-- normalize -->
     <link rel="stylesheet" href="./normalize.css" />
-    <!-- styles css -->
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Default Starter / Global Styles</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+      .img {
+        width: 400px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1>hello world</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-      facilis, placeat quod voluptatum optio nemo, atque, amet aliquid porro
-      dolore voluptates? Consectetur veritatis enim eveniet odit dolores ab
-      voluptatibus vel!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
     </p>
-    <h2>Hello World</h2>
+    <h2>hello world</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-      facilis, placeat quod voluptatum optio nemo, atque, amet aliquid porro
-      dolore voluptates? Consectetur veritatis enim eveniet odit dolores ab
-      voluptatibus vel!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat dolorem
+      a ullam repudiandae! Voluptates dolorum ducimus, ipsa natus vel ratione.
     </p>
-
-    <h1>Hello World</h1>
-    <h2>Hello World</h2>
-    <h3>Hello World</h3>
-    <h4>Hello World</h4>
-    <h5>Hello World</h5>
-
-    <a href="#"> sit amet consectetur</a>
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+    <a href="#">link example</a>
     <ul>
-      <li>first item</li>
-      <li>second item</li>
-      <li>third item</li>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
     </ul>
+
+    <img src="./computer.jpeg" alt="computer" class="img" />
+    <br />
+    <button class="btn" type="button">regular button</button>
+    <button class="btn btn-hipster" type="button">hipster button</button>
+    <br />
+    <br />
+    <br />
 
     <div class="alert alert-danger">hello from danger</div>
     <div class="alert alert-success">hello from success</div>
-
-    <button class="btn">regular button</button>
-    <button class="btn btn-hipster">hipster button</button>
-
     <form class="form">
       <h4>contact form</h4>
       <div class="form-row">
-        <label for="name" class="form-label">Name </label>
+        <label for="name" class="form-label">Name</label>
         <input
-          placeholder="hello there"
           type="text"
+          placeholder="hello there"
           id="name"
           class="form-input"
         />
       </div>
       <div class="form-row">
-        <label for="number" class="form-label">Number </label
-        ><input type="number" id="number" class="form-input" />
+        <label for="number" class="form-label">Number</label>
+        <input type="number" id="number" class="form-input" />
       </div>
       <div class="form-row">
-        <label for="email" class="form-label">Email </label
-        ><input type="text" id="email" class="form-input" />
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-input" />
         <small class="form-alert">please provide value</small>
       </div>
       <div class="form-row">
-        <label for="textarea" class="form-label">Textarea </label>
-        <textarea class="form-textarea">Default Value</textarea>
+        <label for="textarea" class="form-label">Textarea</label>
+        <textarea class="form-textarea">
+Default Value
+        </textarea>
       </div>
-      <button class="btn btn-block">submit</button>
+      <button type="submit" class="btn btn-block">submit</button>
     </form>
     <div class="loading"></div>
+    <br />
+    <br />
+    <div class="title">
+      <h2>section title</h2>
+      <div class="title-underline"></div>
+    </div>
   </body>
 </html>
