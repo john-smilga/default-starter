@@ -3,9 +3,11 @@
 ::before {
   box-sizing: border-box;
 }
-/* fonts */
-@import url('https://fonts.googleapis.com/css?family=Karla:400|Spectral:400');
 
+/* fonts  */
+/* @import url('https://fonts.googleapis.com/css?family=Karla:400|Spectral:400'); */
+/* fonts small projects */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Montserrat&display=swap');
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +44,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Spectral', serif;
-  --bodyFont: 'Karla', sans-serif;
+  --headingFont: 'Inconsolata', monospace;
+  --bodyFont: 'Montserrat', sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
