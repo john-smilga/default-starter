@@ -141,7 +141,7 @@ ul {
   letter-spacing: var(--letterSpacing);
   padding: 0.375rem 0.75rem;
   box-shadow: var(--shadow-1);
-  transition: var(--transtion);
+  transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;
 }
