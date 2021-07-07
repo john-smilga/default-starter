@@ -74,7 +74,7 @@ Library/Faster Approach
 
 #### Just go with happyhues
 
-- [happyheus](https://www.happyhues.co/)
+- [happyhues](https://www.happyhues.co/)
 
 #### Box Shadow
 
