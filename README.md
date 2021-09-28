@@ -3,6 +3,8 @@
 Save time on project setup.
 Less lines of CSS.
 
+[Video Tutorial](https://youtu.be/UDdyGNlQK5w)
+
 ## Normalize
 
 Small CSS file that provides cross-browser consistency in the default styling of HTML elements.
