@@ -1,9 +1,13 @@
 # CSS Default Starter / Global Styles
 
-Save time on project setup.
-Less lines of CSS.
+- Save time on project setup.
+- Less lines of CSS.
 
-[Video Tutorial](https://youtu.be/UDdyGNlQK5w)
+```html
+If you prefer video format instead, just follow the link below
+```
+
+[Complete Video Tutorial](https://youtu.be/UDdyGNlQK5w)
 
 ## Normalize
 
