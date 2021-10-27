@@ -44,7 +44,8 @@ html {
   /* fonts  */
   --headingFont: 'Roboto', sans-serif;
   --bodyFont: 'Nunito', sans-serif;
-  --smallText: 0.7em;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
@@ -114,7 +115,7 @@ h5 {
 
 small,
 .text-small {
-  font-size: var(--smallText);
+  font-size: var(--small-text);
 }
 
 a {
