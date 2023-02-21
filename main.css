@@ -1,10 +1,12 @@
+/* ============= GLOBAL CSS =============== */
+
 *,
 ::after,
 ::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-/* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 
 html {
   font-size: 100%;
@@ -41,9 +43,6 @@ html {
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
 
-  /* fonts  */
-  --headingFont: "Roboto", sans-serif;
-  --bodyFont: "Nunito", sans-serif;
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
   /* rest of the vars */
@@ -67,33 +66,29 @@ html {
 
 body {
   background: var(--backgroundColor);
-  font-family: var(--bodyFont);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1;
   color: var(--textColor);
 }
-
 p {
-  margin-bottom: 1.5rem;
-  max-width: 40em;
+  margin: 0;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5 {
   margin: 0;
-  margin-bottom: 1.38rem;
   font-family: var(--headingFont);
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
 
 h1 {
-  margin-top: 0;
   font-size: 3.052rem;
 }
 
@@ -111,6 +106,11 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+}
+
+.text {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
 }
 
 small,
@@ -236,10 +236,9 @@ ul {
   border-radius: 50%;
   border-top-color: var(--primary-500);
   animation: spinner 0.6s linear infinite;
-}
-.loading {
   margin: 0 auto;
 }
+
 /* title */
 
 .title {
@@ -251,5 +250,5 @@ ul {
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
-  margin-top: -1rem;
+  margin-top: 1rem;
 }
